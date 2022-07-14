@@ -29,7 +29,7 @@ public:
 
 
 //Optimal soln 
-// T ==> O(N), worst case if collisions are there O(N^2)
+// T ==> O(N), worst case if collisions are there O(N^2) hashtable --> O(1) for insertion, deletions, searching
 // S ==> O(N)
 
 class Solution {

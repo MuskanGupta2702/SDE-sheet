@@ -5,6 +5,8 @@ using namespace std;
 // A reverse pair is a pair (i, j) where 0 <= i < j < nums.length and nums[i] > 2 * nums[j].
 
 // T ==> O(N^2) Runtime error as int is not enough to store 2*nums[j] 
+// even if we do double(nums[i])/2.0 > nums[j] then too it gives time limit exceeded
+// SC ==> O(1)
 
 class Solution {
 public:
@@ -26,9 +28,9 @@ public:
     }
 };
 
-//Optimal soln 
-// T ==> O(2(NxM))
-// S ==> O(1)
+//Optimal soln : merge sort
+// TC ==> O(N log N) + O(N) + O(N)
+// S ==> O(N)
 
 class Solution {
     
